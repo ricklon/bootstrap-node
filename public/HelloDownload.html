@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test of jQuery ajax</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+        <script>
+          $(document).ready(function() {
+                // use this to reset a single form
+                $("#fetch").click(function() {
+                $.get("http://nodejs-examples.hotemup_1.c9.io/download", { test: "This is the same text. " } );
+
+                });
+            });
+        </script>
+    </head>
+    <body>
+<h1 id="fetch">fetch file</h1>
+    </body>
+</html>
